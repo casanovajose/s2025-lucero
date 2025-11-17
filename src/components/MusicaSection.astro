@@ -1,0 +1,104 @@
+<section id="musica" class="section" data-section-title="Música">
+  <header class="section-title"><h2>Música</h2></header>
+
+  <div class="slider slider--fade">
+    <input type="radio" name="music" id="music-1" checked />
+    <input type="radio" name="music" id="music-2" />
+    <input type="radio" name="music" id="music-3" />
+
+    <div class="slides card">
+      <!-- Track 1 -->
+      <article class="slide slide--1">
+        <div class="music-track">
+          <div class="media-frame">
+            <img src="./assets/audio/1.webp" alt="Portada tema 1" />
+          </div>
+          <audio controls>
+            <source src="./assets/audio/conlucas.mp3" type="audio/mpeg" />
+            Tu navegador no soporta audio HTML5.
+          </audio>
+        </div>
+        <div class="desc">
+          <p>
+            Texturas con pedales, loops y capas rítmicas, guitarras,
+            sintetizadores, maquinas de ritmos
+          </p>
+        </div>
+      </article>
+
+      <!-- Track 2 -->
+      <article class="slide slide--2">
+        <div class="music-track">
+          <div class="media-frame">
+            <img src="./assets/audio/2.jpg" alt="Portada tema 2" />
+          </div>
+          <audio controls>
+            <source src="./assets/audio/smooth.mp3" type="audio/mpeg" />
+            Tu navegador no soporta audio HTML5.
+          </audio>
+        </div>
+        <div class="desc">
+          <p>Texturas con sintetizadores</p>
+        </div>
+      </article>
+
+      <!-- Track 3 -->
+      <article class="slide slide--3">
+        <div class="music-track">
+          <div class="media-frame">
+            <img src="./assets/audio/3.jpg" alt="Portada tema 3" />
+          </div>
+          <audio controls>
+            <source src="./assets/audio/Arena final.mp3" type="audio/mpeg" />
+            Tu navegador no soporta audio HTML5.
+          </audio>
+        </div>
+        <div class="desc">
+          <p>“Vicio” - 2025 - Codex — Produccion y composicion musical</p>
+        </div>
+      </article>
+
+      <div class="nav-arrows">
+        <!-- cuando está en 1 -->
+        <label
+          for="music-3"
+          class="arrow arrow-left music-when-1"
+          aria-label="anterior"
+        ></label>
+        <label
+          for="music-2"
+          class="arrow arrow-right music-when-1"
+          aria-label="siguiente"
+        ></label>
+        <!-- cuando está en 2 -->
+        <label
+          for="music-1"
+          class="arrow arrow-left music-when-2"
+          aria-label="anterior"
+        ></label>
+        <label
+          for="music-3"
+          class="arrow arrow-right music-when-2"
+          aria-label="siguiente"
+        ></label>
+        <!-- cuando está en 3 -->
+        <label
+          for="music-2"
+          class="arrow arrow-left music-when-3"
+          aria-label="anterior"
+        ></label>
+        <label
+          for="music-1"
+          class="arrow arrow-right music-when-3"
+          aria-label="siguiente"
+        ></label>
+      </div>
+    </div>
+
+    <div class="dots">
+      <label for="music-1" class="dot" aria-label="ir a música 1"></label>
+      <label for="music-2" class="dot" aria-label="ir a música 2"></label>
+      <label for="music-3" class="dot" aria-label="ir a música 3"></label>
+    </div>
+  </div>
+</section>

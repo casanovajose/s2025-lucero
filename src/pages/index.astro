@@ -1,0 +1,76 @@
+---
+import SideNav from "../components/SideNav.astro";
+import MobileNav from "../components/MobileNav.astro";
+import BioSection from "../components/BioSection.astro";
+import ObrasSection from "../components/ObrasSection.astro";
+import FotosSection from "../components/FotosSection.astro";
+import MusicaSection from "../components/MusicaSection.astro";
+import AnimacionesSection from "../components/AnimacionesSection.astro";
+import ContactoSection from "../components/ContactoSection.astro";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/estilos.css" />
+  </head>
+  <body>
+    <!-- Capa de fondo animada -->
+    <div class="bg-anim"></div>
+
+    <!-- Menú lateral (desktop) -->
+    <SideNav />
+
+    <!-- Navbar móvil inferior -->
+    <MobileNav />
+
+    <main class="container">
+      <!-- 1) Portada -->
+      <section
+        id="top"
+        class="section section--center"
+        data-section-title="Portfolio"
+      >
+        <h1 class="display">Portfolio</h1>
+      </section>
+
+      <!-- 2) Bio -->
+      <BioSection />
+
+      <!-- 4) Obras -->
+      <ObrasSection />
+
+      <!-- 5) Fotos -->
+      <FotosSection />
+
+      <!-- 6) Música -->
+      <MusicaSection />
+
+      <!-- 7) Animaciones / Visuales -->
+      <AnimacionesSection />
+
+      <!-- 8) Contacto -->
+      <ContactoSection />
+    </main>
+
+    <!-- Lightbox para fotos -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox__close" aria-label="Cerrar imagen"></button>
+      <img class="lightbox__img" src="" alt="" />
+    </div>
+
+    <!-- Tu JS tal cual -->
+<script src="/script.js" is:inline></script>
+  </body>
+</html>
